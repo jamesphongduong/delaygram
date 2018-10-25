@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
     before_action :configure_permitted_parameters, if: :devise_controller?
 
     # similar to private but can be shared between inheritance
+    #we dont have access to devise controller, so putting this code in application controller allows us to append onto with the below
     protected
 
     def configure_permitted_parameters
