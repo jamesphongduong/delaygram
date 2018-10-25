@@ -1,0 +1,16 @@
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <%# <a class="navbar-brand" href="#">Navbar</a> %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+        <%# rails image helper %>
+          <%= link_to "profile", root_path, class: "nav-item nav-link active" %>
+          <%= link_to "feed", root_path, class: "nav-item nav-link active" %>
+          <%= link_to "upload photo", root_path, class: "nav-item nav-link active" %>
+          <%= link_to "logout", destroy_user_session_path, class: "nav-item nav-link active", :method => :destroy %>
+          <a class="nav-item nav-link disabled" href="#">Disabled</a>
+        </div>
+      </div>
+    </nav>
